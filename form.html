@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap form Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background:paleturquoise">
+    <header class="text-white p-4 pl-5" style="font-size:30px;background:purple;">
+        scrimba login form
+    </header>
+    <div class="container bg-light mt-5" style="border:2px solid black;padding:60px;width:30%;">
+     <h1 class="font-wgight-bold mb-5 text-center">Scrimba</h1>
+        <form action="/action_pagephp">
+            <div class="form-group row">
+            <label>username</label>
+            <input type="text" required  placeholder="username" class="form-control">
+          </div>
+          <div class="form-group row">
+            <label>password</label>
+            <input type="password" required placeholder="password" class="form-control">
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" type="remember">Remember me
+                </label>
+                </div>
+                <button type="submit" class="btn btn-primary">log in</button>
+            
+                    
+            </form>
+        </div>
+</body>
+</html>
