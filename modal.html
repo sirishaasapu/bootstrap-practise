@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap mpdal Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header  class="bg-dark text-light p-3">
+    <h1>This is modal class</h1>
+    </header>
+     <button class="btn btn-primary m-5" data-toggle="modal" data-target="#mymodal">click me</button>
+     <div class="modal" fade id="mymodal">
+        <div class="modal-dialog">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h1 class="modal-title">
+                     hello.....</h1>
+                     <button class="btn" data-dismiss="modal">
+                                <span>&times;</span></button>
+        
+         </div>
+        
+                <div class="modal-body">
+                <p>do you want to continue......</p>
+            </div>
+           
+             <div class="modal-footer">
+                <button class="btn btn-primary" data-dismiss="modal">cancel</button>
+                </div>
+        </div>
+     </div>
+</body>
+</html>
