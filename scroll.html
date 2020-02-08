@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap scroll Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar fixed-top p-3 navbar-light bg-info navbar-expand-lg">
+      <span style="font-size:30px;" class="text-light">Google</span>
+      <button  class="btn navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">           
+            <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto navbar-pills text-light"><!---for right align use ml-auto--->
+           <li class="navbar-item">
+               <a href="#comp" class="navbar-brand  text-light  active">home</a></li>
+             <li class="navbar-item">
+           <span class="navbar navbar-brand   dropdown dropdown-toggle" data-toggle="dropdown">about
+               <div class="dropdown-menu">
+               <div class="dropdown-item">link1</div>
+               <div class="dropdown-item">link2</div>
+               <div class="dropdown-item">link3</div>
+                 </div>
+                </span>
+              </li>
+             <li class="navbar-item "><a href="#lan" class=" navbar-brand  text-light">contact</a></li>
+             <li class="navbar-item"><a href="#" class="navbar-brand text-light">news</a></li>
+       </ul>
+   </div>
+   </nav>
+     
+                
+<div class="container mt-5 pt-5" id="comp">
+        
+    <h1 class="text-dark p-2 mt-3">Computer science</h1>
+</div>
+<div class="container ">
+     <span class="btn-group">
+            <div>
+                    <h5 class=" m-3" style="width:600px;">Computer science (sometimes called computation science) is the study of processes that interact with data and that can be represented as data in the form of programs. It enables the use of algorithms to manipulate, store, and communicate digital information. A computer scientist studies the theory of computation and the practice of designing software systems.[1]
+
+                    Its fields can be divided into theoretical and practical disciplines. Computational complexity theory is highly abstract, while computer graphics emphasizes real-world applications. Programming language theory considers approaches to the description of computational processes, while software engineering involves the use of programming languages and complex systems. Human–computer interaction considers the challenges in making computers useful, usable, and accessible.</h3>
+                   </h5>
+            </div> 
+            <img class="rounded mt-5 " width=400px height=250px src="https://picsum.photos/1200/440/?image=201">
+    </span>  
+        </div>
+      <div class="container">
+          <ul class="pagination mt-5  justify-content-center">
+              <li class="page-item"><a class="page-link " href="#">previous</a></li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link"  href="#">2</a></li>
+              <li class="page-item"><a class="page-link disable" href="#">3</a></li>
+              <li class="page-item disabled"><a class="page-link" href="#">next</a></li>
+      </ul>
+     
+      </div>
+      <div class="container mt-5 text-white" id="lan">
+            <div class="row ">
+                 <h1 class="col bg-warning m-2 p-5">html 5</h1>
+                 <h1 class="col bg-dark m-2 p-5">Css 3</h1>
+                 <h1 class="col bg-success m-2 p-5">bootstrap 4</h1>
+            </div>
+            <div class="row ">
+                 <h1 class="col bg-danger m-2 p-5">Javascript</h1>
+                 <h1 class="col bg-info m-2 p-5">Angular 2</h1>
+                 <h1 class="col bg-secondary m-2 p-5">Typescript</h1>
+            </div>
+            <div class="row">
+                 <h1 class="col bg-dark m-2 p-5">+ES6</h1>
+                 <h1 class="col bg-primary m-2 p-5">React</h1>
+                 <h1 class="col bg-warning m-2 p-5">perl</h1>
+            </div>
+
+    </div>
+   
+
+   </body>
+   </html>
