@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap carousel Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar p-3 navbar-light bg-info navbar-expand-lg">
+    <span style="font-size:30px;" class="text-light">Google</span>
+    <button  class="btn navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">           
+          <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav ml-auto navbar-pills text-light"><!---for right align use ml-auto--->
+         <li class="navbar-item">
+             <a href="#" class="navbar-brand  text-light  active">home</a></li>
+           <li class="navbar-item">
+         <span class="navbar navbar-brand   dropdown dropdown-toggle" data-toggle="dropdown">about
+             <div class="dropdown-menu">
+             <div class="dropdown-item">link1</div>
+             <div class="dropdown-item">link2</div>
+             <div class="dropdown-item">link3</div>
+               </div>
+              </span>
+            </li>
+           <li class="navbar-item "><a href="#" class=" navbar-brand  text-light">contact</a></li>
+           <li class="navbar-item"><a href="#" class="navbar-brand text-light">news</a></li>
+     </ul>
+ </div>
+ </nav>
+ <div class="container mt-5">
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+  
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://picsum.photos/1200/440/?image=201">
+        <div class="carousel-caption text-light ">
+        <h3 >student</h3>
+        <p>while(!(sucess=try())</p>
+        </div>
+      </div>  
+      <div class="carousel-item">
+      <img  height="440px" width="1200px;" src="https://www.w3schools.com/bootstrap4/sanfran.jpg"  alt="image">
+      <div class="carousel-caption text-light ">
+        <h3 >New york</h3>
+        <p>
+          We love the Big Apple!</p>
+        </div>
+    </div>
+        <div class="carousel-item">
+        <img height="440px" width="1200px;" src="https://www.w3schools.com/bootstrap4/paris.jpg"  width="50%" alt="New York">
+        <div class="carousel-caption text-light ">
+          <h3 >Chicago
+            </h3>
+          <p>Thank you, Chicago!
+            </p>
+          </div>
+      </div>
+
+    </div>
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  
+  </div>
+ </div>
+</body>
+</html>
