@@ -1,0 +1,90 @@
+<head>
+    <title>Bootstrap tooltips Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar p-3 navbar-light bg-info navbar-expand-lg">
+      <span style="font-size:30px;" class="text-light">Google</span>
+      <button  class="btn navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">           
+            <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto navbar-pills text-light"><!---for right align use ml-auto--->
+           <li class="navbar-item">
+               <a href="#" class="navbar-brand  text-light  active">home</a></li>
+             <li class="navbar-item">
+           <span class="navbar navbar-brand   dropdown dropdown-toggle" data-toggle="dropdown">about
+               <div class="dropdown-menu">
+               <div class="dropdown-item">link1</div>
+               <div class="dropdown-item">link2</div>
+               <div class="dropdown-item">link3</div>
+                 </div>
+                </span>
+              </li>
+             <li class="navbar-item "><a href="#" class=" navbar-brand  text-light">contact</a></li>
+             <li class="navbar-item"><a href="#" class="navbar-brand text-light">news</a></li>
+       </ul>
+   </div>
+   </nav>
+   <div class="container mt-5">
+    <span class="btn-group">
+        <div>
+    <h3 class="text-muted m-3 ">Oops!</h3>
+    
+     <h3 class="text-muted m-3">We couldn’t load today’s feel-good<br> stories... our hamsters might have fallen<br> asleep.</h3>
+    
+    </div> 
+    <img class="rounded-circle ml-5" width=200px height=200px src="https://picsum.photos/1200/440/?image=201">
+</span>  
+</div>
+<div class="container mt-5 text-center">
+  <button type="button" class="btn">
+      <span class="spinner-border spinner-border-sm"></span> loading....</button>
+        <button type="button" class="btn btn-primary">
+        <a href="#"  data-toggle="tooltip" class="text-light" data-placement="bottom" title="submit" >log in</a>
+      </button>
+  </div>
+  <div class="jumbotron container p-4 mt-5">
+        <h1>Bootstap 4</h1>
+        <p>
+               Bootstrap 4 is the newest version of Bootstrap, which is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.</p>
+               <h3>Bootstrap 4 uses:</h3>
+               <ul>
+                <li data-toggle="popover" title="main use" data-placement="left" data-content="easy to style">easy to use</li>
+                <li>responsive features</li>
+                <li>mobile first approach</li>
+                <li>browser compatability</li>
+                </ul>
+           </div>
+           <div class="toast container mt-5" data-autohide="false">
+                <div class="toast-header">
+                  <strong class="mr-auto text-primary">for more info</strong>
+                  <small class="text-muted">5 mins ago</small>
+                  <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+                </div>
+                <div class="toast-body">
+                  Some text inside this
+                </div>
+              </div>
+           <script>
+                $(document).ready(function(){
+                  $('[data-toggle="tooltip"]').tooltip();
+                });
+                </script>
+                <script>
+                        $(document).ready(function(){
+                          $('[data-toggle="popover"]').popover();
+                        });
+                        </script>
+                        <script>
+                                $(document).ready(function(){
+                                  $('.toast').toast('show');
+                                });
+                                </script>
+   </body>
+   </html>
