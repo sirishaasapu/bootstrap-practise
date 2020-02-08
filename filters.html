@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap filters </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+       <nav class="navbar  p-3 navbar-light bg-info navbar-expand-lg">
+        <span style="font-size:30px;" class="text-light">Google</span>
+        <button  class="btn navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">           
+              <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto navbar-pills text-light"><!---for right align use ml-auto--->
+             <li class="navbar-item">
+                 <a href="#" class="navbar-brand  text-light  active"><i class="fas fa-home mr-2"></i>home</a></li>
+               <li class="navbar-item">
+             <span class="navbar navbar-brand   dropdown dropdown-toggle" data-toggle="dropdown">about
+                 <div class="dropdown-menu">
+                 <div class="dropdown-item">link1</div>
+                 <div class="dropdown-item">link2</div>
+                 <div class="dropdown-item">link3</div>
+                   </div>
+                  </span>
+                </li>
+               <li class="navbar-item "><a href="#" class=" navbar-brand  text-light"><i class="fas fa-phone mr-2"></i>contact</a></li>
+               <li class="navbar-item"><a href="#" class="navbar-brand text-light"><i class="fas fa-question-circle mr-2"></i>help</a></li>
+         </ul>
+     </div>
+     </nav>
+    <div class="container mt-3">
+        
+        <p>Type something in the input field to search the table for first names, last names or emails:</p>  
+        <input class="form-control" id="myInput" type="text" placeholder="Search..">
+        <br>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody id="myTable">
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@mail.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@greatstuff.com</td>
+            </tr>
+            <tr>
+              <td>Anja</td>
+              <td>Ravendale</td>
+              <td>a_r@test.com</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <p>Note that we start the search in tbody, to prevent filtering the table headers.</p>
+      </div>
+      
+      <script>
+      $(document).ready(function(){
+        $("#myInput").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $("#myTable tr").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+      });
+      </script>
+      
+    </body>
+    </html>
